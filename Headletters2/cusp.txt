@@ -1,0 +1,13 @@
+"01","ME","MA","ME",,,,,"MAMEME"
+"02","ME","JU","VE","RA",,,,"JUMERAVE"
+"03","MO","ME","RA","RA",,,,"MEMORA"
+"04","SU","VE","ME",,,,,"MESUVE"
+"05","ME","MA","SA",,,,,"MAMESA"
+"06","MA","JU","MA",,,,,"JUMAMA"
+"07","JU","VE","KE","SU","MA",,,"JUKEMASUVE"
+"08","JU","SU","MO","ME","SA","KE",,"JUKEMEMOSASU"
+"09","SA","MA","RA",,,,,"MARASA"
+"10","SA","ME","JU",,,,,"JUMESA"
+"11","JU","ME","SA",,,,,"JUMESA"
+"12","JU","SU","VE",,,,,"JUSUVE"
+

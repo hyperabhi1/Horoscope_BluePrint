@@ -1,0 +1,9 @@
+   1  CUSPID                            CHARACTER          2
+   2  p1                                CHARACTER          2
+   3  p2                                CHARACTER          2
+   4  p3                                CHARACTER          2
+   5  p4                                CHARACTER          2
+   6  p5                                CHARACTER          2
+   7  p6                                CHARACTER          2
+   8  P7                                CHARACTER          2
+   9  S1                                CHARACTER         14

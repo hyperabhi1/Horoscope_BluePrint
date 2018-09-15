@@ -1,0 +1,24 @@
+
+Structure for table   C:\temp\match_file_me.dbf
+Table type            DBASE
+Version               7
+Number of rows        1310
+Last update           01-09-2018
+-------------------------------------------------------------------------
+Field  Field Name                        Type          Length  Dec  Index
+    1  uid                               CHARACTER         10           N
+    2  hid                               CHARACTER         10           N
+    3  planet                            CHARACTER          2           N
+    4  key                               CHARACTER         18           N
+    5  combo                             CHARACTER         18           N
+    6  CUSPID                            CHARACTER         18           N
+    7  CUSPSTR                           CHARACTER         18           N
+    8  MATCHSTR                          CHARACTER         18           N
+    9  n                                 NUMERIC           10           N
+   10  p                                 CHARACTER          1           N
+-------------------------------------------------------------------------
+** Total **                                               124
+
+
+
+

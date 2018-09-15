@@ -1,0 +1,8 @@
+   1  uid                               CHARACTER         10           N
+   2  hid                               CHARACTER         10           N
+   3  planet                            CHARACTER          2           N
+   4  key                               CHARACTER         16           N
+   5  combo                             CHARACTER         16           N
+   6  CUSPID                            CHARACTER          2           N
+   7  CUSPSTR                           CHARACTER         16           N
+   8  MATCHSTR                          CHARACTER         16           N

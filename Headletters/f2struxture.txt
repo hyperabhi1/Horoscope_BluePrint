@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------
+Field  Field Name                        Type          Length  Dec  Index
+    1  p0                                CHARACTER          2           N
+    2  p1                                CHARACTER          2           N
+    3  p2                                CHARACTER          2           N
+    4  p3                                CHARACTER          2           N
+    5  p4                                CHARACTER          2           N
+    6  p5                                CHARACTER          2           N
+    7  p6                                CHARACTER          2           N
+    8  p7                                CHARACTER          2           N
+-------------------------------------------------------------------------
+** Total **                                                17

@@ -1,0 +1,22 @@
+Structure for table   C:\TEMP\HPLANET.dbf
+Table type            DBASE
+Version               7
+Number of rows        9
+Last update           26-08-2018
+-------------------------------------------------------------------------
+Field  Field Name                        Type          Length  Dec  Index
+    1  UID                               CHARACTER         10           N
+    2  HID                               CHARACTER         10           N
+    3  PLANET                            CHARACTER          2           N
+    4  SIGN                              CHARACTER          3           N
+    5  DMS                               CHARACTER          8           N
+    6  HP1                               CHARACTER          2           N
+    7  HP2                               CHARACTER          2           N
+    8  HP3                               CHARACTER          2           N
+    9  HP4                               CHARACTER          2           N
+   10  HP5                               CHARACTER          2           N
+   11  HP6                               CHARACTER          2           N
+   12  HPHOUSE                           CHARACTER          2           N
+-------------------------------------------------------------------------
+** Total **                                                48
+

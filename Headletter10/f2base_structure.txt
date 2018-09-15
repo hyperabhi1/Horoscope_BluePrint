@@ -1,0 +1,16 @@
+
+Structure for table   C:\temp\f2.dbf
+Table type            DBASE
+Version               7
+Number of rows        30537
+Last update           09/13/2018
+---------------------------------------------------------------------
+Field  Field Name                        Type          Length  Dec  I
+    1  p1                                CHARACTER          2
+    2  p2                                CHARACTER          2
+    3  p3                                CHARACTER          2
+    4  p4                                CHARACTER          2
+    5  p5                                CHARACTER          2
+    6  p6                                CHARACTER          2
+---------------------------------------------------------------------
+** Total **                                                13

@@ -1,0 +1,22 @@
+
+tructure for table   C:\temp\f2base_explode_asc_me.dbf
+able type            DBASE
+ersion               7
+umber of rows        1268736
+ast update           01-09-2018
+------------------------------------------------------------------------
+ield  Field Name                        Type          Length  Dec  Index
+   1  key                               CHARACTER         18           N
+   2  combo                             CHARACTER         18           N
+   3  x1                                CHARACTER          2           N
+   4  x2                                CHARACTER          2           N
+   5  x3                                CHARACTER          2           N
+   6  x4                                CHARACTER          2           N
+   7  x5                                CHARACTER          2           N
+   8  x6                                CHARACTER          2           N
+   9  x7                                CHARACTER          2           N
+  10  x8                                CHARACTER          2           N
+  11  p                                 CHARACTER          1           N
+------------------------------------------------------------------------
+* Total **                                                54
+

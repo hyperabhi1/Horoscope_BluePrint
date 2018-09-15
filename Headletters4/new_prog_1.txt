@@ -1,0 +1,352 @@
+	public c01,c02,c03,c04,c05,c06,c07,c08,c09,c10,c11,c12
+
+	m_planet = 'ME'
+
+	select 1
+	use c:\temp\f2base excl
+	go top
+	
+	select 2
+	use c:\temp\cusp
+	
+	select 3
+	use c:\temp\match_file_me excl
+
+	select 2
+	go top
+	
+	do while .not. eof()
+	
+		store len(ltrim(rtrim(s1))) to tl
+		store tl/2 to l
+		
+		if cuspid = '01'
+			c01  = new array(l)
+			ms1 = s1
+			start = 1
+			for k = 1 to l
+				c01[k] = substr(s1,start,2)
+				start = start + 2
+			endfor	
+		endif
+
+		if cuspid = '02'
+			c02  = new array(l)
+			ms2 = s1
+			start = 1
+			for k = 1 to l
+				c02[k] = substr(s1,start,2)
+				start = start + 2
+			endfor	
+		endif
+
+		if cuspid = '03'
+			c03  = new array(l)
+			ms3 = s1
+			start = 1
+			for k = 1 to l
+				c03[k] = substr(s1,start,2)
+				start = start + 2
+			endfor	
+		endif
+
+		if cuspid = '04'
+			ms4 = s1
+			c04  = new array(l)
+			start = 1
+			for k = 1 to l
+				c04[k] = substr(s1,start,2)
+				start = start + 2
+			endfor	
+		endif
+
+		if cuspid = '05'
+			ms5 = s1
+			c05  = new array(l)
+			start = 1
+			for k = 1 to l
+				c05[k] = substr(s1,start,2)
+				start = start + 2
+			endfor	
+		endif
+
+		if cuspid = '06'
+			ms6 = s1
+			c06  = new array(l)
+			start = 1
+			for k = 1 to l
+				c06[k] = substr(s1,start,2)
+				start = start + 2
+			endfor	
+		endif
+
+		if cuspid = '07'
+			ms7 = s1
+			c07  = new array(l)
+			start = 1
+			for k = 1 to l
+				c07[k] = substr(s1,start,2)
+				start = start + 2
+			endfor	
+		endif
+
+		if cuspid = '08'
+			ms8 = s1
+			c08  = new array(l)
+			start = 1
+			for k = 1 to l
+				c08[k] = substr(s1,start,2)
+				start = start + 2
+			endfor	
+		endif
+
+		if cuspid = '09'
+			ms9 = s1
+			c09  = new array(l)
+			start = 1
+			for k = 1 to l
+				c09[k] = substr(s1,start,2)
+				start = start + 2
+			endfor	
+		endif
+
+		if cuspid = '10'
+			ms10 = s1
+			c10  = new array(l)
+			start = 1
+			for k = 1 to l
+				c10[k] = substr(s1,start,2)
+				start = start + 2
+			endfor	
+		endif
+
+		if cuspid = '11'
+			ms11 = s1
+			c11  = new array(l)
+			start = 1
+			for k = 1 to l
+				c11[k] = substr(s1,start,2)
+				start = start + 2
+			endfor	
+		endif
+
+		if cuspid = '12'
+			ms12 = s1
+			c12  = new array(l)
+			start = 1
+			for k = 1 to l
+				c12[k] = substr(s1,start,2)
+				start = start + 2
+			endfor	
+		endif
+		
+	skip
+	enddo
+	counter = 0
+	tcounter = 0
+	sele 1
+	go top
+	do while .not. eof()
+	match_key(m_planet,p1,p2,p3,p4,p5,p6,p7,c01,"01")
+	match_key(m_planet,p1,p2,p3,p4,p5,p6,p7,c02,"02")
+	match_key(m_planet,p1,p2,p3,p4,p5,p6,p7,c03,"03")
+	match_key(m_planet,p1,p2,p3,p4,p5,p6,p7,c04,"04")
+	match_key(m_planet,p1,p2,p3,p4,p5,p6,p7,c05,"05")
+	match_key(m_planet,p1,p2,p3,p4,p5,p6,p7,c06,"06")
+	match_key(m_planet,p1,p2,p3,p4,p5,p6,p7,c07,"07")
+	match_key(m_planet,p1,p2,p3,p4,p5,p6,p7,c08,"08")
+	match_key(m_planet,p1,p2,p3,p4,p5,p6,p7,c09,"09")
+	match_key(m_planet,p1,p2,p3,p4,p5,p6,p7,c10,"10")
+	match_key(m_planet,p1,p2,p3,p4,p5,p6,p7,c11,"11")
+	match_key(m_planet,p1,p2,p3,p4,p5,p6,p7,c12,"12")
+	counter = counter + 1
+	if counter = 1000
+		tcounter = counter + tcounter
+		counter = 0
+		? tcounter
+	endif	
+	select 1
+	skip
+	enddo
+	close all
+
+	function match_key(p0,p1,p2,p3,p4,p5,p6,p7,c99,p_cusp)
+
+	combo_len = 8
+	cusp_len = alen(c99)
+	xcusp = new array(cusp_len)
+	acopy(c99,xcusp)
+	cusp_str = ""
+
+	fl1 = ""
+	fl2 = ""
+	fl3 = ""
+	fl4 = ""
+	fl5 = ""
+	fl6 = ""
+	fl7 = ""
+	fl8 = ""
+
+	f1 = 0
+	f2 = 0
+	f3 = 0
+	f4 = 0
+	f5 = 0
+	f6 = 0
+	f7 = 0
+	f8 = 0
+	
+	for i = 1 to cusp_len	
+		cusp_str = c99[i] + cusp_str
+	endfor
+	
+	m_combo = ""
+	combo = new array(8)
+	
+	combo[1] = p0
+	combo[2] = p1
+	combo[3] = p2
+	combo[4] = p3
+	combo[5] = p4
+	combo[6] = p5
+	combo[7] = p6
+	combo[8] = p7
+	
+	for i = 1 to combo_len
+		m_combo = m_combo + combo[i] 
+	endfor
+
+	** find the first match of cusp in the combo string
+	
+	for i = 1 to combo_len
+			for k = 1 to cusp_len
+				if combo[i] = xcusp[k]
+					f1 = i
+					xcusp[k] = "XX"
+					fl1 = "Y"
+					exit
+				endif
+				if fl1 = 'Y'
+					exit
+				endif
+			endfor
+	endfor
+
+	f2 = f1 + 1
+	if f2 > 8
+		f2 = 1
+	endif
+	if fl1 = 'Y'
+			for k = 1 to cusp_len
+				if combo[f2] = xcusp[k]
+					xcusp[k] = "XX"
+					fl2 = 'Y'
+					exit
+				endif
+			endfor
+	endif
+
+	f3 = f2 + 1
+	if f3 > 8
+		f3 = 1
+	endif
+	if fl2 = 'Y'
+			for k = 1 to cusp_len
+				if combo[f3] = xcusp[k]
+					xcusp[k] = "XX"
+					fl3 = 'Y'
+					exit
+				endif
+			endfor
+	endif
+
+	f4 = f3 + 1
+	if f4 > 8
+		f4 = 1
+	endif
+	if fl3 = 'Y'
+			for k = 1 to cusp_len
+				if combo[f4] = xcusp[k]
+					xcusp[k] = "XX"
+					fl4 = 'Y'
+					exit
+				endif
+			endfor
+	endif
+
+	f5 = f4 + 1
+	if f5 > 8
+		f5 = 1
+	endif
+	if fl4 = 'Y'
+			for k = 1 to cusp_len
+				if combo[f5] = xcusp[k]
+					xcusp[k] = "XX"
+					fl5 = 'Y'
+					exit
+				endif
+			endfor
+	endif
+
+	f6 = f5 + 1
+	if f6 > 8
+		f6 = 1
+	endif
+	if fl5 = 'Y'
+			for k = 1 to cusp_len
+				if combo[f6] = xcusp[k]
+					xcusp[k] = "XX"
+					fl6 = 'Y'
+					exit
+				endif
+			endfor
+	endif
+
+	f7 = f6 + 1
+	if f7 > 8
+		f7 = 1
+	endif
+	if fl6 = 'Y'
+			for k = 1 to cusp_len
+				if combo[f7] = xcusp[k]
+					xcusp[k] = "XX"
+					fl7 = 'Y'
+					exit
+				endif
+			endfor
+	endif
+	
+	f8 = f7 + 1
+	if f8 > 8
+		f8 = 1
+	endif
+	if fl7 = 'Y'
+			for k = 1 to cusp_len
+				if combo[f8] = xcusp[k]
+					xcusp[k] = "XX"
+					fl8 = 'Y'
+					exit
+				endif
+			endfor
+	endif
+	
+	pattern = true
+	for i = 1 to alen(xcusp)
+			if xcusp[i] <> 'XX'
+				pattern = false
+			endif
+	endfor	
+
+	if pattern = true
+					select 3
+					appe blank
+					replace uid with "XXXXXXXXXX"
+					replace hid with "1000000001"
+					replace planet with m_planet
+					replace key with m_combo
+					replace cuspid with p_cusp
+					replace matchstr with cusp_str
+		endif
+	select 1
+	return
+	

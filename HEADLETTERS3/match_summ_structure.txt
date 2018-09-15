@@ -1,0 +1,32 @@
+
+Structure for table   C:\TEMP\match_summ.dbf
+Table type            DBASE
+Version               7
+Number of rows        59049
+Last update           26-08-2018
+-------------------------------------------------------------------------
+Field  Field Name                        Type          Length  Dec  Index
+    1  uid                               CHARACTER         10           N
+    2  hid                               CHARACTER         10           N
+    3  key                               CHARACTER         16           N
+    4  X01                               CHARACTER          2           N
+    5  X02                               CHARACTER          2           N
+    6  X03                               CHARACTER          2           N
+    7  X04                               CHARACTER          2           N
+    8  X05                               CHARACTER          2           N
+    9  X06                               CHARACTER          2           N
+   10  X07                               CHARACTER          2           N
+   11  X08                               CHARACTER          2           N
+   12  X09                               CHARACTER          2           N
+   13  X10                               CHARACTER          2           N
+   14  X11                               CHARACTER          2           N
+   15  X12                               CHARACTER          2           N
+-------------------------------------------------------------------------
+** Total **                                                61
+
+
+
+
+
+
+

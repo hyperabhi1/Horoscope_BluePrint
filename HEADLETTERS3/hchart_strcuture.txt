@@ -1,0 +1,20 @@
+
+tructure for table   C:\temp\hchart.dbf
+able type            DBASE
+ersion               7
+umber of rows        21
+ast update           25-08-2018
+------------------------------------------------------------------------
+ield  Field Name                        Type          Length  Dec  Index
+   1  UID                               CHARACTER         10           N
+   2  HID                               CHARACTER         10           N
+   3  SIGN                              CHARACTER          3           N
+   4  ORDER                             CHARACTER          2           N
+   5  DMS                               CHARACTER          8           N
+   6  CUSPID                            CHARACTER          2           N
+   7  PLANET                            CHARACTER          2           N
+   8  ROMAN                             CHARACTER          4           N
+   9  PLORCU                            CHARACTER          1           N
+  10  TEXT                              CHARACTER         50           N
+------------------------------------------------------------------------
+* Total **                                                93

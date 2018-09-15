@@ -1,0 +1,19 @@
+
+Structure for table   C:\temp\hchart_gen.dbf
+Table type            DBASE
+Version               7
+Number of rows        1
+Last update           25-08-2018
+-------------------------------------------------------------------------
+Field  Field Name                        Type          Length  Dec  Index
+    1  UID                               CHARACTER         10           N
+    2  HID                               CHARACTER         10           N
+    3  STAR                              CHARACTER         20           N
+    4  ASC                               CHARACTER         20           N
+    5  RASHI                             CHARACTER         20           N
+-------------------------------------------------------------------------
+** Total **                                                81
+
+
+
+

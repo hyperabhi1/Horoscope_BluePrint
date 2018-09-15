@@ -1,0 +1,148 @@
+** CALL dll1 AND UPDATE hplanet,hcusp,hchart_gen
+
+SELECT 1
+USE C:\TEMP\HPLANET
+
+SELECT 2
+USE C:\TEMP\HCUSP
+
+** for hchart - INDEX ON UID+HID+ORDER+DMS TO C:\TEMP\HCHART
+
+SELECT 3
+USE C:\TEMP\HCHART excl
+
+SELECT 2
+GO TOP
+
+DO WHILE NOT EOF()
+	STORE UID TO M_uid
+	store hid to m_hid
+	store sign to m_sign
+	store cusp to m_cuspid
+	store DMS to m_DMS
+	store cp1 to m_cp1
+	store cp2 to m_cp2
+	store cp3 to m_cp3
+	m_order = getorder(m_sign)
+	m_roman = getroman(cusp)
+	select 3
+	appe blank
+	replace uid with m_uid
+	replace hid with m_hid
+	replace cuspid with m_cuspid
+	replace sign with m_sign
+	replace dms with m_dms
+	replace order with m_order
+	replace roman with m_roman
+	select 2
+	skip
+enddo
+
+wait 
+
+SELECT 1
+GO TOP
+
+DO WHILE NOT EOF()
+	STORE UID TO M_uid
+	store hid to m_hid
+	store sign to m_sign
+	store planet to m_planet
+	store hphouse to m_cuspid
+	store DMS to m_DMS
+	m_order = getorder(m_sign)
+	wait
+	select 3
+	appe blank
+	replace uid with m_uid
+	replace hid with m_hid
+	replace cuspid with m_cuspid
+	replace sign with m_sign
+	replace dms with m_dms
+	replace planet with m_planet
+	replace order with m_order
+	replace plorcu with 'Y'
+	select 1
+	skip
+enddo
+
+function getorder(s)
+ov='00'
+if s = 'ARI'
+	ov = '01'
+endif
+if s = 'TAU'
+	ov = '02'
+endif
+if s = 'GEM'
+	ov = '03'
+endif
+if s = 'CAN'
+	ov = '04'
+endif
+if s = 'LEO'
+	ov = '05'
+endif
+if s = 'VIR'
+	ov = '06'
+endif
+if s = 'LIB'
+	ov = '07'
+endif
+if s = 'SCO'
+	ov = '08'
+endif
+if s = 'SAG'
+	ov = '09'
+endif
+if s = 'CAP'
+	ov = '10'
+endif
+if s = 'AQU'
+	ov = '11'
+endif
+if s = 'PIS'
+	ov = '12'
+endif
+return ov
+
+function getroman(s)
+ov = 'XX'
+if s = '01'
+	ov = 'I'
+endif
+if s = '02'
+	ov = 'II'
+endif
+if s = '03'
+	ov = 'III'
+endif
+if s = '04'
+	ov = 'IV'
+endif
+if s = '05'
+	ov = 'V'
+endif
+if s = '06'
+	ov = 'VI'
+endif
+if s = '07'
+	ov = 'VII'
+endif
+if s = '08'
+	ov = 'VIII'
+endif
+if s = '09'
+	ov = 'IX'
+endif
+if s = '10'
+	ov = 'X'
+endif
+if s = '11'
+	ov = 'XI'
+endif
+if s = '12'
+	ov = 'X11'
+endif
+return ov
+
